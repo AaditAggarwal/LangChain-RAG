@@ -21,7 +21,7 @@ st.title("Local LLM with Ollama")
 input_text = st.text_input("How can I help you today?")
 
 # Ollama
-llm = Ollama(model="llama2", temperature=1.1)
+llm = Ollama(model="llama2", temperature=0.8)
 output_parser = StrOutputParser()
 chain = prompt | llm | output_parser
 
