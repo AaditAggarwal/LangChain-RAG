@@ -1,2 +1,2 @@
-# LangChain-Project
-This is my first project with LangChain
+# LangChain-RAG
+This is a repository where I publish my learnings/mini-projects related to Langchain/AI
