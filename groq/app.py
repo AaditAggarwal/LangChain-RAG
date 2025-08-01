@@ -42,7 +42,7 @@ document_chain = create_stuff_documents_chain(prompt=prompt, llm=llm)
 retriever = st.session_state.vectors.as_retriever()
 retrieval_chain = create_retrieval_chain(retriever, document_chain)
 
-user_prompt = st.text_input("How can I help you today?")
+user_prompt = st.text_input("How can I help you today?", placeholder="Type any question about LangSmith")
 
 if user_prompt:
     start = time.process_time()
@@ -56,4 +56,4 @@ if user_prompt:
         # Find relevant chunks
         for i, doc in enumerate(response["context"]):
             st.write(doc.page_content)
-            st.write("-----------------------------------")
+            st.write("-----------------------------------") 
