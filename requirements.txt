@@ -17,3 +17,5 @@ wikipedia
 groq
 langchain-groq
 pygithub
+asknews
+langgraph
